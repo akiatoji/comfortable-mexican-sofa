@@ -89,7 +89,7 @@ window.CMS.wysiwyg = ->
     definedLinks:     "#{CMS.pages_path}?source=redactor"
     buttonSource:     true
     formatting:       ['p', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6']
-    plugins:          ['imagemanager', 'filemanager', 'table', 'video', 'definedlinks']
+    plugins:          ['imagemanager', 'filemanager', 'table', 'video', 'definedlinks', 'counter']
     lang:             CMS.locale
     convertDivs:      false
 
