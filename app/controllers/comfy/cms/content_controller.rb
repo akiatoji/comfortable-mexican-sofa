@@ -61,9 +61,12 @@ protected
   def page_not_found
     @cms_page = @cms_site.pages.published.find_by_full_path!('/404')
 
-    respond_to do |format|
-      format.html { render_page(404) }
-    end
+    # respond_to do |format|
+    #   format.html { render_page(404) }
+    # end
+
+    render_page(404)
+
   rescue ActiveRecord::RecordNotFound
     raise ActionController::RoutingError.new("Page Not Found at: \"#{params[:cms_path]}\"")
   end
